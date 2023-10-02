@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="show_date"></p>
+
+    <script>
+
+        const person = {fname:"Janco", lname:"Kriel", age:21};
+
+        let  txt = "";
+        for (let i in person){
+            txt += person[i] + " ";
+        }
+        
+        document.getElementById("show_date").innerHTML = txt;
+    </script>
+</body>
+</html>
