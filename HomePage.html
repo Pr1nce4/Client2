@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomePage</title>
+        <meta charset="UTF-8">
+        <Meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/d934f10c75.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="Styles/HomePage.css">
+
+        <div class="sticky-nav-wrapper">
+
+            <div class="navbar">
+                <a class="active" href="HomePage.html">Home</a>
+                <a href="Test.html">Test</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+
+                <div class="left">
+                    <a href="https://www.instagram.com/p/BgSlRglAKBn/?hl=en">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <h2>asdfaf</h2> 
+
+                </div>
+            </div>
+
+
+        <br>
+        <img src="Pics/logo.jpg" alt="logo" width="95%">
+    </head>
+
+    <body>
+<div class="decription">
+    <h1><center>WE GO THE DISTANCE</center></h1>
+    <h2><center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab aspernatur quisquam facilis dicta necessitatibus iure consectetur neque ipsum sequi natus ipsa adipisci cupiditate labore molestias at, minus veniam cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia odit enim sint, iste praesentium vitae eius exercitationem incidunt earum aut dicta nobis dolorem? Laboriosam pariatur fugiat sapiente neque nesciunt!
+    </center></h2>
+</div>
+
+<img src="Pics/values.png" alt="values" class="center">
+<br>
+    <button class="button ServicesButton">Services</button>
+    <button class="button AboutUs">About Us</button>
+    <button class="button ContactUs">Contact Us</button>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+      
+        <img class="mySlides w3-animate-fading" src="Pics/Collage1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="Pics/Collage2.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="Pics/Collage3.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="Pics/Collage4.jpg" style="width:100%">
+      </div>
+
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 9000);    
+        }
+        </script>
+      
+    </body>
+</html>
+
+
+
