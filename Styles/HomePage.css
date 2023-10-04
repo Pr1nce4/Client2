@@ -1,4 +1,4 @@
-
+/*Navbar CSS*/
 .navbar{
     background-color: rgb(35, 33, 33);
     overflow: hidden;
@@ -21,6 +21,13 @@
     background-color: rgb(215, 228, 204);
 }
 
+.left{
+  float: right;
+  color: white;
+  margin-right: 20px;
+}
+
+/*HomePage CSS*/
 .center {
     display: block;
     margin-left: auto;
@@ -48,8 +55,3 @@
     color: black;
   }
 
-  .left{
-    float: right;
-    color: white;
-    margin-right: 20px;
-  }
