@@ -1,0 +1,151 @@
+body {
+    font-family: -apple-system, sans-serif;
+}
+
+.heading-container{
+    text-align: center;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Heading{
+    font-size: 30px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc; 
+    padding: 0; 
+    margin: 20px 0; 
+}
+
+li {
+    margin: 8px 0; 
+    color: #333;
+}
+
+li:hover {
+    font-size: 120%;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-gap: 10px; 
+    background-color: rgb(164, 168, 172);
+}
+
+.grid-content {
+    padding: 5px;
+    text-align: center;
+}
+
+.grid-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-image img {
+    object-fit: cover;
+    width: 80%;
+    height: auto; 
+}
+
+/* Services Cards */
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 10px;
+}
+
+/* Styling 
+flex-direction: column;
+    align-items: flex-start;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    max-width: 600px; 
+    width: 100%; 
+
+*/
+.box {
+    background: #ccc;
+    color: #777;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.home-cards-container:hover {
+    font-size: larger;
+}
+
+.home-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.home-features-card {
+    color: #777;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.home-icon-container {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    margin-right: 24px;
+    border-radius: 50%;
+    flex-direction: column;
+    background-color: #555555;
+}
+
+.home-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+.home-text-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.home-heading {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.home-text {
+    color: #777;
+    text-align: left;
+    font-size: 16px;
+}
+
+.home-features-card {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-left: 32px;
+    margin-bottom: 48px;
+    padding-right: 32px;
+    flex-direction: row;
+    padding-bottom: 32px;
+}
