@@ -72,7 +72,7 @@ body{
 
 
 .mapImage{
-
+  width: 100%;
 }
 
 @media (max-width: 950px) {
@@ -82,7 +82,7 @@ body{
 
     .container{
         width: 90%;
-        padding: 30px 40px 40px 35px ;
+        padding: 30px 40px 40px 35px;
     }
     .container .content .right-side{
     width: 75%;
