@@ -16,11 +16,7 @@
                 <a href="#">Contact Us</a>
 
                 <div class="left">
-                    <a href="https://www.instagram.com/p/BgSlRglAKBn/?hl=en">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                    <h2>asdfaf</h2> 
-
+                    <h2>072 532 0331</h2>
                 </div>
             </div>
 
@@ -43,29 +39,35 @@
     <button class="button AboutUs">About Us</button>
     <button class="button ContactUs">Contact Us</button>
 
-    <div class="w3-content w3-section" style="max-width:500px">
+    <div class="Display_Section" style="max-width: 500px; position: relative;">
+        <img class="Prof2000_pics" src="Pics/Collage1.jpg" style="width: 100%">
+        <img class="Prof2000_pics" src="Pics/Collage2.jpg" style="width: 100%">
+        <img class="Prof2000_pics" src="Pics/Collage3.jpg" style="width: 100%">
+        <img class="Prof2000_pics" src="Pics/Collage4.jpg" style="width: 100%">
       
-        <img class="mySlides w3-animate-fading" src="Pics/Collage1.jpg" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="Pics/Collage2.jpg" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="Pics/Collage3.jpg" style="width:100%">
-        <img class="mySlides w3-animate-fading" src="Pics/Collage4.jpg" style="width:100%">
+        <button class="Pic_button display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="Pic_button display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
+      
 
       
-      <script>
-        var myIndex = 0;
-        carousel();
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
         
-        function carousel() {
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
           var i;
-          var x = document.getElementsByClassName("mySlides");
+          var x = document.getElementsByClassName("Prof2000_pics");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 6000);    
+          x[slideIndex-1].style.display = "block";  
         }
         </script>
       
