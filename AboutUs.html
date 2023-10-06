@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/731112e7e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/AboutUs.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <div class="grid">
+            <div class="box">
+                <img class="image" src="Pics/Collage1.jpg">
+            </div>
+            <div class="box">
+                <div>
+                    <h2>
+                        Who we are and what we do:
+                    </h2>
+    
+                    <h1>
+                        Let Us Introduce Ourselves
+                    </h1>
+                    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio amet incidunt, blanditiis accusamus laborum fugiat sit voluptas, voluptate ipsa omnis ut adipisci suscipit numquam libero at quasi aut molestiae dicta?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio amet incidunt, blanditiis accusamus laborum fugiat sit voluptas, voluptate ipsa omnis ut adipisci suscipit numquam libero at quasi aut molestiae dicta?</p>
+                </div>
+                <div class="inner-grid">
+                    <div class="inner-box">
+                        <p id="count1" style="font-size: 25px; font-weight: 600;">15</p>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="inner-box">
+                        <p id="count2" style="font-size: 25px; font-weight: 600;">200</p>
+                        <p>Successfull emergency callouts</p>
+                    </div>
+                    <script>
+                        function animateValue(id, start, end, duration) {
+                        var range = end - start;
+                        var current = start;
+                        var increment = end > start ? 1 : -1;
+                        // you had sort of a bug here, duration is smaller than range
+                        // so `duration / range < 0`, so rounding with
+                        // `Math.floor()` was giving 0 in the end
+                        var stepTime = Math.abs(duration / range);
+                        var incrementsPerIteration = 1;
+                        // 4 is for 4ms, time for the minimal `setInterval`
+                        // incrementsPerIteration - are the number of consecutive
+                        // additions per iteration 
+                        if (stepTime < 4) {
+                            incrementsPerIteration = Math.ceil(4 / stepTime);
+                        }
+                        var obj = document.getElementById(id);
+                        var timer = setInterval(function() {
+                            for (var i = 0; i < incrementsPerIteration; i++) {
+                            current += increment;
+                            obj.innerHTML = current;
+                            if (current == end) {
+                                clearInterval(timer);
+                                break;
+                            }
+                            }
+                        }, stepTime);
+                        }
+    
+                        animateValue('count1', 0, 15, 2500);
+                        animateValue('count2', 0, 200, 2500);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="grid">
+                <div class="box">
+                    <div>
+                        <h2>
+                            Why Choose Us:
+                        </h2>
+        
+                        <h1>
+                            Lorem ipsum dolor sit amet elit.
+                        </h1>
+                        
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio amet incidunt, blanditiis accusamus laborum fugiat sit voluptas, voluptate ipsa omnis ut adipisci suscipit numquam libero at quasi aut molestiae dicta?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio amet incidunt, blanditiis accusamus laborum fugiat sit voluptas, voluptate ipsa omnis ut adipisci suscipit numquam libero at quasi aut molestiae dicta?</p>
+                    </div>                 
+                </div>
+                <div class="box">
+                    <img class="image2" src="Pics/Collage5.jpg">
+                </div>               
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-grid">
+            <div class="details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                    <div class="topic">Addresses</div>
+                    <div class="text-one">No2, Hawkins Avenue</div>
+                    <div class="text-two">Unit 9</div>
+                    <div class="text-two">Epping Industrial</div>
+                </div>
+            </div>
+            <div class="details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="info">
+                    <div class="topic">Telephone</div>
+                    <div class="text-one">021 023 4687</div>
+                </div>
+            </div>
+            <div class="details">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div class="info">
+                    <div class="topic">Cell/WhatsApp</div>
+                    <div class="text-one">072 532 0331</div>            
+                </div>
+            </div>
+            <div class="details">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <div class="topic">Email</div>
+                    <div class="text-one">email@example.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
