@@ -15,12 +15,16 @@ body{
   justify-content: center;
 }
 .container{
-  width: 85%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .container .content{
   display: flex;
   align-items: center;
@@ -46,17 +50,17 @@ body{
   transform: translateY(-50%);
   background: #afafb6;
 }
-.content .left-side .details{
+.content .left-side .contactDetails{
   margin: 14px;
   text-align: center;
 }
 
-.content .left-side .details .topic{
+.content .left-side .contactDetails .topic{
   font-size: 18px;
   font-weight: 500;
 }
-.content .left-side .details .text-one,
-.content .left-side .details .text-two{
+.content .left-side .contactDetails .text-one,
+.content .left-side .contactDetails .text-two{
   font-size: 14px;
   color: #afafb6;
 }
@@ -111,4 +115,74 @@ body{
    width: 100%;
    margin-left: 0;
  }
+}
+
+
+
+/* Footer Styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  margin-top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #424242;
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Increase padding for better spacing on mobile */
+}
+
+.footer p {
+  margin: 0;
+  padding: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Use auto-fit to create responsive columns */
+  gap: 20px; /* Adjust the gap as needed */
+  padding: 20px; /* Increase padding for better spacing on mobile */
+  background-color: #424242;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 5px;
+  background-color: #424242;
+}
+
+.details i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.info {
+  flex: 1;
+}
+
+.topic {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-one {
+  font-size: 16px;
+}
+
+.text-two {
+  font-size: 14px;
+}
+
+/* Media query for screens smaller than 600px (typical mobile devices) */
+@media (max-width: 600px) {
+  .footer-grid {
+      grid-template-columns: 1fr; /* Display a single column on smaller screens */
+  }
 }
