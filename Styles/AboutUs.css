@@ -173,3 +173,31 @@ body {
         grid-template-columns: 1fr; /* Display a single column on smaller screens */
     }
   }
+
+  .navbar {
+    background-color: rgb(35, 33, 33);
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    color: rgb(243, 243, 237);
+    text-align: center;
+    padding: 12px 12px;
+    font-size: 35px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(232, 229, 226);
+    color: black;
+  }
+  
+  .navbar a:active {
+    background-color: rgb(215, 228, 204);
+  }
+  
+  .left {
+    float: right;
+    color: white;
+    margin-right: 20px;
+  }
