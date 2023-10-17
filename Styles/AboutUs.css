@@ -3,17 +3,41 @@ body {
     background: #858888;
 }
 
-.grid {
+.grid1 {
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 30% 70%;
 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
     width: 85%;
     background: #fff;
-    border-radius: 6px;
+    
     padding: 20px 60px 30px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 25px -6px;
+}
+
+.grid2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    width: 85%;
+    background: #fff;
+    
+    padding: 20px 60px 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 
     /* Styling */
@@ -66,16 +90,18 @@ body {
 }
 
 .image {
+    border-radius: 20px;
     padding: 10px;
     width: 90%; /* Ensure the image takes up 100% of its container */
     height: auto; /* Maintain the image's aspect ratio */
 }
 
 .image2 {
-    margin-left: auto;
+    border-radius: 20px;
+    margin-left: 15%;
     margin-right: auto;
     padding: 10px;
-    width: 90%; /* Ensure the image takes up 100% of its container */
+    width: 60%; /* Ensure the image takes up 100% of its container */
     height: auto; /* Maintain the image's aspect ratio */
 }
 
@@ -107,69 +133,16 @@ p {
 
 
 /* Footer Styles */
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer {
-    margin-top: 50px;
-    left: 0;
-    bottom: 0;
+
+.footer h6{
+    margin-top: 25px;   
+}
+
+.full-width-footer {
     width: 100%;
-    background-color: #424242;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Increase padding for better spacing on mobile */
-  }
-  
-  .footer p {
-    margin: 0;
-    padding: 10px;
-  }
-  
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Use auto-fit to create responsive columns */
-    gap: 20px; /* Adjust the gap as needed */
-    padding: 20px; /* Increase padding for better spacing on mobile */
-    background-color: #424242;
-    justify-content: center; /* Center the content horizontally */
-  }
-  
-  .details {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    padding: 5px;
-    background-color: #424242;
-  }
-  
-  .details i {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .info {
-    flex: 1;
-  }
-  
-  .topic {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .text-one {
-    font-size: 16px;
-  }
-  
-  .text-two {
-    font-size: 14px;
-  }
-  
-  /* Media query for screens smaller than 600px (typical mobile devices) */
-  @media (max-width: 600px) {
-    .footer-grid {
-        grid-template-columns: 1fr; /* Display a single column on smaller screens */
-    }
-  }
+}
+
+.services p{
+    margin-top: -10px;
+    font-size: 13px;
+}

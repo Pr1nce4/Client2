@@ -5,81 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/ContactUs.css">
     <script src="https://kit.fontawesome.com/731112e7e6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+
+    <!-- Latest minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Packaged JS (Bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>ContactUs</title>
 </head>
-<body>
-    <body>
-      <div>
-        <div class="container">
-          <div class="content">
-            <div class="left-side">
-              <div class="contactDetails">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="topic">Addresses</div>
-                <div class="text-one">No2, Hawkins Avenue</div>
-                <div class="text-two">Unit 9</div>
-                <div class="text-two">Epping Industiral</div>
-              </div>
-              <div class="contactDetails">
-                <i class="fas fa-phone-alt"></i>
-                <div class="topic">Telephone</div>
-                <div class="text-one">021 023 4687</div>
-              </div>
-              <div class="contactDetails">
-                <i class="fa-brands fa-whatsapp"></i>
-                <div class="topic">Cell/WhatsApp</div>
-                <div class="text-one">072 532 0331</div>
-                
-              </div>
-              <div class="contactDetails">
-                <i class="fas fa-envelope"></i>
-                <div class="topic">Email</div>
-                <div class="text-one">email@example.com</div>
-              </div>
-            </div>
-            <div class="right-side">
-                <div class="topic-text">We are located all over South Africa</div>
-                <p>We provide on demand breakdown services 24/7 in the following locations</p>
-                <img class="mapImage" src="Pics/Prof2000Location.PNG">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarLeftAlignExample"
+        aria-controls="navbarLeftAlignExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+
+  <body>
+    <div class="contentContainer">        
+      <div class="content">
+        <div class="left-side">
+          <div class="contactDetails">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Addresses</div>
+            <div class="text-one">No2, Hawkins Avenue</div>
+            <div class="text-two">Unit 9</div>
+            <div class="text-two">Epping Industiral</div>
+          </div>
+          <div class="contactDetails">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Telephone</div>
+            <div class="text-one">021 023 4687</div>
+          </div>
+          <div class="contactDetails">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="topic">Cell/WhatsApp</div>
+            <div class="text-one">072 532 0331</div>
+            
+          </div>
+          <div class="contactDetails">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">email@example.com</div>
           </div>
         </div>
-      </div>
-
-      <div class="footer">
-        <div class="footer-grid">
-            <div class="details">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info">
-                    <div class="topic">Addresses</div>
-                    <div class="text-one">No2, Hawkins Avenue</div>
-                    <div class="text-two">Unit 9</div>
-                    <div class="text-two">Epping Industrial</div>
-                </div>
-            </div>
-            <div class="details">
-                <i class="fas fa-phone-alt"></i>
-                <div class="info">
-                    <div class="topic">Telephone</div>
-                    <div class="text-one">021 023 4687</div>
-                </div>
-            </div>
-            <div class="details">
-                <i class="fa-brands fa-whatsapp"></i>
-                <div class="info">
-                    <div class="topic">Cell/WhatsApp</div>
-                    <div class="text-one">072 532 0331</div>            
-                </div>
-            </div>
-            <div class="details">
-                <i class="fas fa-envelope"></i>
-                <div class="info">
-                    <div class="topic">Email</div>
-                    <div class="text-one">email@example.com</div>
-                </div>
+        <div class="right-side">
+            <div class="topic-text">We are located all over South Africa</div>
+            <p>We provide on demand breakdown services 24/7 in the following locations</p>
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1655.1021541902305!2d18.52822299127876!3d-33.93587295065839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5b640e3917a1%3A0xf59c60b24722681e!2s9%20Hawkins%20Ave%2C%20Epping%2C%20Cape%20Town%2C%207475!5e0!3m2!1sen!2sza!4v1697486606146!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+      </div>
     </div>
-        
-      
-    </body>
+  </body>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-muted full-width-footer bg-light">
+    <!-- Section: Links  -->
+    <section class="footer">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-2">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fa-solid fa-wrench"></i> Prof 2000
+            </h6>
+            <p>
+              If you have any emergency or any airbrake breakdown, just one call is all it takes to receive our (attention) quick response.
+            </p>
+            <p>
+              We attend to all breakdowns during the day and after hours,and we also attend on sites and road side around Cape Town and outside of Cape Town
+            </p>
+          </div>
+          <!-- Grid column -->
+
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold mb-4">
+              Services we Offer:
+            </h6>
+            <div class="services">
+              <div class="g-col-6">
+                <p>
+                  <a href="/Services.html" class="text-reset">Road Assistance</a>
+                </p>
+                <p>
+                  <a href="/Services.html" class="text-reset">Breakdown Services on all trucks</a>
+                </p>
+                <p>
+                  <a href="/Services.html" class="text-reset">Diagnosis on all Trucks</a>
+                </p>
+              </div>
+              <div class="g-col-6">
+               
+                <p>
+                  <a href="/Services.html" class="text-reset">Repairs on all Airbrakes</a>
+                </p>
+                <p>
+                  <a href="/Services.html" class="text-reset">Sales for all airbrake parts</a>
+                </p>
+                <p>
+                  <a href="/Services.html" class="text-reset">Design</a>
+                </p>
+              </div>
+            </div>          
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact Details:</h6>
+            <p><i class="fas fa-map-marker-alt"></i> No2, Hawkins Avenue
+              Unit 9
+              Epping Industrial</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i> 072 532 0331</p>
+            <p><i class="fas fa-phone-alt"></i> 021 023 4687</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
 </html>
