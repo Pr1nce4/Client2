@@ -156,9 +156,83 @@ body {
   font-size: 14px;
 }
 
-/* Media query for screens smaller than 600px (typical mobile devices) */
-@media (max-width: 600px) {
+@media (max-width: 950px) {
+  
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .left {
+    margin-right: 10px;
+  }
+
+  .description h1, .description h2 {
+    text-align: left;
+  }
+
+  .button {
+    width: 100%;
+    font-size: large;
+    margin: 4px 0;
+  }
+
+  .Display_Section {
+    max-width: 100%;
+  }
+
+  .Pic_button.display-left, .Pic_button.display-right {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
   .footer-grid {
-      grid-template-columns: 1fr; /* Display a single column on smaller screens */
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 820px) {
+
+  .navbar a {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .navbar {
+    padding: 8px;
+  }
+
+  .left {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .description h1, .description h2 {
+    text-align: left;
+  }
+
+  .button {
+    width: 45%; 
+    font-size: medium; 
+    margin: 4px;
+    display: inline-block;
+  }
+
+  .Display_Section {
+    max-width: 100%;
+  }
+
+  .Pic_button.display-left,
+  .Pic_button.display-right {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
