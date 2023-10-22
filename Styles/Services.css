@@ -1,3 +1,4 @@
+
 body {
     font-family: -apple-system, sans-serif;
     background-image: url("https://i.pinimg.com/originals/5e/09/fb/5e09fb85e58db92b61a8e0636d151a37.jpg");
@@ -8,19 +9,21 @@ body {
 }
 
 .heading-container{
+    height: 20px;
     text-align: center;
-    height: 150px; 
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
 .Heading{
-    font-size: 30px;
-    color: #333;
+    font-size: 34px;
+    color: #1d1d1d;
+    margin-bottom: 80px;
 }
 
 .services-container {
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -30,12 +33,47 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.grid-content {
-    
+.grid-content {  
     text-align: center;
 }
 
 /* Services Cards */
+  
+  .row1 {
+    display: grid;
+    grid-template-columns: 60px auto; /* Change the width of the icon container */
+    grid-template-rows: 1fr;
+    gap: 10px; /* Adjust the horizontal spacing between icon and title */
+    grid-auto-flow: row;
+    grid-template-areas: "home-icon-container home-title-container";
+    grid-area: 1 / 1 / 2 / 4;
+    height: 100px;
+  }
+  
+  .home-icon-container { 
+    grid-area: home-icon-container; 
+}
+
+  
+  .home-title-container { 
+    text-align: center;
+    grid-area: home-title-container;
+    margin-top: 20px;
+ }
+  
+  .row2 { 
+    grid-area: 2 / 1 / 4 / 4;
+    height: 300px; 
+}
+  
+  .home-text-container {
+    justify-self: start; /* Align the text to the left */
+    align-self: start; /* Align the text to the top */
+    grid-area: 2 / 1 / 4 / 4;
+    width: 90%;
+    height: 90%px
+  }
+  
 
 .grid {
     display: grid;
@@ -54,7 +92,6 @@ body {
 .home-cards-container:hover {
     font-size: larger;
 }
-
 
 
 @media (max-width: 950px) {
@@ -80,6 +117,16 @@ body {
         min-width: 20px;
         min-height: 20px;
     }
+
+    .box{
+        height: 350px;
+    }
+}
+
+@media (max-width: 650px) {
+    .box{
+        height: 550px;
+    }
 }
 
 .home-features-card {
@@ -94,16 +141,17 @@ body {
 }
 
 .home-icon-container {
-    display: flex;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
     padding: 8px;
     align-items: center;
-    margin-right: 24px;
     border-radius: 50%;
-    flex-direction: column;
     background-color: #818181;
 }
 
 .home-icon {
+    margin-top: 5px;
     width: 36px;
     height: 36px;
     min-width: 36px;
@@ -111,6 +159,7 @@ body {
 }
 
 .home-text-container {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -119,8 +168,7 @@ body {
 .home-heading {
     color: #1d1a1a;
     font-weight: 600;
-    margin-bottom: 24px;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .home-text {
@@ -141,6 +189,7 @@ body {
     flex-direction: row;
 }
 
+
 /* Footer Styles */
 .footer h6{
     margin-top: 25px;   
@@ -155,30 +204,82 @@ body {
     font-size: 13px;
 }
 
-.navbar {
-    background-color: rgb(35, 33, 33);
-    overflow: hidden;
-  }
-  
-  .navbar a {
-    float: left;
-    color: rgb(243, 243, 237);
-    text-align: center;
-    padding: 12px 12px;
-    font-size: 35px;
-  }
-  
-  .navbar a:hover {
-    background-color: rgb(232, 229, 226);
-    color: black;
-  }
-  
-  .navbar a:active {
-    background-color: rgb(215, 228, 204);
-  }
-  
-  .left {
-    float: right;
-    color: white;
-    margin-right: 20px;
-  }
+.left {
+float: right;
+color: white;
+margin-right: 20px;
+}
+
+
+
+/* NavBar */
+
+@media (max-width: 991px) {
+.navbar-scroll {
+    background-color: #fff;
+}
+    
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+    color: rgb(218, 64, 64) !important;
+}         
+}
+
+.navbar-brand {
+letter-spacing: 3px;
+font-size: 2rem;
+font-weight: 500;
+}
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+color: #fff;
+}
+
+.navbar-scroll {
+box-shadow: none;
+}
+
+.navbar-scrolled {
+box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+color: #ff0000;
+}
+
+.navbar-scrolled {
+background-color: #fff;
+}
+
+@media (max-width: 450px) {
+#intro {
+    height: 950px !important;
+}
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+#intro {
+    height: 1100px !important;
+}
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+#intro {
+    height: 600px !important;
+}
+}
+
+.display-1 {
+font-weight: 500 !important;
+letter-spacing: 40px;
+}
+
+@media (min-width: 1600px) {
+.display-1 {
+    font-size: 10rem;
+}
+}

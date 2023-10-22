@@ -13,8 +13,9 @@ body{
   background: #575858;
   
 }
+
 .contentContainer{
-  margin-top: 50px;
+  margin-top: 110px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -23,6 +24,7 @@ body{
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .contentContainer .content{
   display: flex;
@@ -75,6 +77,7 @@ body{
 
 iframe {
   width: 90%; /* Adjust height for smaller screens */
+  border-radius: 18px;
 }
 
 .mapImage{
@@ -84,16 +87,20 @@ iframe {
 @media (max-width: 950px) {
 
     .contentContainer{
-        width: 90%;
-        padding: 30px 40px 40px 35px;
+      width: 90%;
+      padding: 30px 40px 40px 35px;
     }
     .contentContainer .content .right-side{
-    width: 75%;
-    margin-left: 55px;
+      width: 75%;
+      margin-left: 55px;
     }
 }
 @media (max-width: 820px) {
+  .content{
+    margin-top: 60px;
+  }
   .contentContainer{
+    padding-top: 20px;
     display: block;
     margin: 0 auto;
     height: 100%;
@@ -135,4 +142,77 @@ iframe {
 .services p{
   margin-top: -10px;
   font-size: 13px;
+}
+
+
+/* NavBar */
+
+@media (max-width: 991px) {
+  .navbar-scroll {
+    background-color: #fff;
+  }
+     
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: rgb(218, 64, 64) !important;
+  }         
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #fff;
+}
+
+.navbar-scroll {
+  box-shadow: none;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #ff0000;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+@media (max-width: 450px) {
+  #intro {
+    height: 950px !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  #intro {
+    height: 1100px !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+  #intro {
+    height: 600px !important;
+  }
+}
+
+.display-1 {
+  font-weight: 500 !important;
+  letter-spacing: 40px;
+}
+
+@media (min-width: 1600px) {
+  .display-1 {
+    font-size: 10rem;
+  }
 }
