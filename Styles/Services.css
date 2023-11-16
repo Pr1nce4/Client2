@@ -82,6 +82,10 @@ body {
     grid-area: home-title-container;
  }
 
+ .home-title-container h3{
+    font-weight: 800;
+ }
+
   
   
   .row2 {  display: grid;
