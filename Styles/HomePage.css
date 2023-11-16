@@ -1,3 +1,33 @@
+/*Navbar Style*/
+.navbar-brand {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 500;
+  }
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+  color: #fff;
+  }
+  
+  .navbar-scroll {
+  box-shadow: none;
+  }
+  
+  .navbar-scrolled {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-scrolled .navbar-brand,
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .fa-bars {
+  color: #ff0000;
+  }
+  
+  .navbar-scrolled {
+  background-color: #fff;
+  }
+
 /* HomePage CSS */
 .center {
   display: block;
@@ -17,7 +47,7 @@
   cursor: pointer;
   background-color: gray;
   width: 28%;
-  height: 120px;
+  height: 100px;
   font-size: xx-large;
 }
 
