@@ -47,69 +47,67 @@
           </div>
         </nav>
       </header>
-  <section>
+  <section class="body">
     <body>
-      <img class="Banner-Pic" src="Pics/PROF2000_Banner.png" alt="logo">
-          
-    <div class="margin-top decription">
-      <div class="overflow-hidden">
-        <h1 class="drop-in"><center><ul>WE GO THE DISTANCE</ul></center></h1>
+      <img class="Banner-Pic" src="Pics/PROF2000_Banner.png" alt="logo">         
+      <div class="margin-top decription">
+        <div class="overflow-hidden">
+          <h1 class="drop-in"><center><ul>WE GO THE DISTANCE</ul></center></h1>
+        </div>
+        <div class="overflow-hidden">
+          <h2 class="drop-in-2"><center>We offer advanced troubleshooting and diagnoses to find the issues on your vehicle. We supply all types of airbrake components at affordable prices.
+            We respond when you are in an emergency or any airbrake breakdown situation. All it takes is one call and you have our attention with rapid response.
+        </center></h2>
+        </div>
       </div>
-      <div class="overflow-hidden">
-        <h2 class="drop-in-2"><center>We offer advanced troubleshooting and diagnoses to find the issues on your vehicle. We supply all types of airbrake components at affordable prices.
-          We respond when you are in an emergency or any airbrake breakdown situation. All it takes is one call and you have our attention with rapid response.
-      </center></h2>
+
+      <img src="Pics/values.png" alt="values" class="margin-top center pic-border-radius">
+      <br>
+      <button class="button ServicesButton" onclick="location.href='Services.html'">Services</button>
+      <button class="button AboutUs" onclick="location.href='/AboutUs.html'">About Us</button>
+      <button class="button ContactUs" onclick="location.href='/ContactUs.html'">Contact Us</button>
+
+
+      <div class="Display_Section" style="max-width: 950px; position: relative;">
+        <img class="Prof2000_pics" src="Pics/Collage1.jpg" style="width: 768px; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage2.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage3.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage4.jpg" style="width: 768px; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage5.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage6.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage7.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage8.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage9.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage10.jpg" style="width: 768px; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage11.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage12.jpg" style="width: 100%; height: 767px">
+        <img class="Prof2000_pics" src="Pics/Collage13.jpg" style="width: 100%; height: 767px">
+
+      
+        <button class="Pic_button display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="Pic_button display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
-    </div>
 
-    <img src="Pics/values.png" alt="values" class="margin-top center pic-border-radius">
-    <br>
-    <button class="button ServicesButton" onclick="location.href='Services.html'">Services</button>
-    <button class="button AboutUs" onclick="location.href='/AboutUs.html'">About Us</button>
-    <button class="button ContactUs" onclick="location.href='/ContactUs.html'">Contact Us</button>
-
-
-    <div class="Display_Section" style="max-width: 950px; position: relative;">
-      <img class="Prof2000_pics" src="Pics/Collage1.jpg" style="width: 768px; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage2.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage3.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage4.jpg" style="width: 768px; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage5.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage6.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage7.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage8.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage9.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage10.jpg" style="width: 768px; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage11.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage12.jpg" style="width: 100%; height: 767px">
-      <img class="Prof2000_pics" src="Pics/Collage13.jpg" style="width: 100%; height: 767px">
-
-    
-      <button class="Pic_button display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="Pic_button display-right" onclick="plusDivs(1)">&#10095;</button>
-    </div>
-
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("Prof2000_pics");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
         }
-        x[slideIndex-1].style.display = "block";  
-      }
-    </script>
-
-  </body>
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("Prof2000_pics");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+    </body>
   </section>
   <!-- Footer -->
   <footer class="text-center text-lg-start text-muted full-width-footer bg-light">
