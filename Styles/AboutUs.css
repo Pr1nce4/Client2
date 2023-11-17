@@ -56,52 +56,102 @@ body {
     text-align: left;
 }
 
-@media (max-width: 1200px) {
-    .grid {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        background: #ccc;
-    }
-    
-    
-        /* Styling */
-    .box {
-        color: #333;
-        text-align: left;
-    }
-    .image {
-        padding: 5px;
-        width: 80%; /* Ensure the image takes up 100% of its container */
-        height: auto; /* Maintain the image's aspect ratio */
-    }
-}
 
-@media (max-width: 600px) {
-    .image {
-        display: none;
+
+  .item {
+    display: inline-block;
+
+    margin-top: 100px;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+    width: 85%;
+    background: #fff;
+    
+    padding: 20px 60px 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 25px -6px;
+  }
+
+  .item2 {
+    display: inline-block;
+
+    margin-top: -10px; 
+
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    width: 85%;
+    background: #fff;
+    
+    padding: 20px 60px 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 25px -6px;
+  }
+
+  /* on PC */
+  @media screen and (min-width: 550px) {
+    .featured-image {
+      float: left;
+      width: 40%;
+      padding-right: 15px;
     }
-    .image2 {
-        display: none;
+    .featured-image img {
+      width: 100%;
     }
-}
+    .description {
+      float: left;
+      width: 60%;
+    }
+  }
+  /* on Mobile */
+  @media screen and (max-width: 550px) {
+    .featured-image {
+      width: 100%;
+    }
+    .featured-image img {
+      width: 100%;
+    }
+    .description {
+      width: 100%;
+    }
+  }
+@media screen and (min-width: 550px) {
+    .featured-image {
+      float: left;
+      width: 40%;
+      padding-right: 15px;
+    }
+    .featured-image img {
+      width: 100%;
+    }
+    .description {
+      float: left;
+      width: 60%;
+    }
+  }
+  /* on Mobile */
+  @media screen and (max-width: 550px) {
+    .featured-image {
+      width: 100%;
+    }
+    .featured-image img {
+      width: 100%;
+    }
+    .description {
+      width: 100%;
+    }
+  }
+
 
 .image {
+    display: block;
     border-radius: 20px;
     padding: 10px;
-    width: 90%; /* Ensure the image takes up 100% of its container */
-    height: auto; /* Maintain the image's aspect ratio */
-}
-
-.image2 {
-    border-radius: 20px;
-    margin-left: 15%;
-    margin-right: auto;
-    padding: 10px;
-    width: 60%; /* Ensure the image takes up 100% of its container */
-    height: auto; /* Maintain the image's aspect ratio */
+    height: auto;
 }
 
 
