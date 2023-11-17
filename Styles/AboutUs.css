@@ -50,18 +50,23 @@ body {
 }
 
     /* Styling */
-.box {
-    padding: 10px;
-    color: #333;
-    text-align: left;
-}
 
+  .oupa{
+    width: 100%;
+  }
 
+  .parent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .item {
     display: inline-block;
 
     margin-top: 100px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -78,6 +83,8 @@ body {
   .item2 {
     display: inline-block;
 
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     margin-top: -10px; 
 
     border-top-right-radius: 0px;
@@ -103,12 +110,19 @@ body {
       width: 100%;
     }
     .description {
+      font-size: 1.5vw;
       float: left;
       width: 60%;
     }
+    .description h3{
+      font-size: 2.5vw;
+    }
+    .description h1{
+      font-size: 3.5vw;
+    }
   }
   /* on Mobile */
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 700px) {
     .featured-image {
       width: 100%;
     }
@@ -116,10 +130,11 @@ body {
       width: 100%;
     }
     .description {
+      font-size: 1.8vh;
       width: 100%;
     }
   }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
     .featured-image {
       float: left;
       width: 40%;
@@ -129,8 +144,14 @@ body {
       width: 100%;
     }
     .description {
-      float: left;
+      font-size: 1.5vw;
       width: 60%;
+    }
+    .description h3{
+      font-size: 2.5vw;
+    }
+    .description h1{
+      font-size: 4vw;
     }
   }
   /* on Mobile */
@@ -142,6 +163,7 @@ body {
       width: 100%;
     }
     .description {
+      font-size: 1.8vh;
       width: 100%;
     }
   }
