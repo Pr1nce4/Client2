@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: "Poppins" , sans-serif;
+}
 
 body {
-    font-family: -apple-system, sans-serif;
     background-image: url("https://i.pinimg.com/originals/5e/09/fb/5e09fb85e58db92b61a8e0636d151a37.jpg");
     background-size: cover; /* This will make the image cover the entire background */
     background-repeat: no-repeat;
@@ -77,6 +80,10 @@ body {
   .home-title-container { 
     text-align: left;
     grid-area: home-title-container;
+ }
+
+ .home-title-container h3{
+    font-weight: 800;
  }
 
   

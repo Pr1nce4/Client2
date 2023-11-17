@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: "Poppins" , sans-serif;
+}
+
 body {
-    font-family: -apple-system, sans-serif;
     background-image: url("https://i.pinimg.com/originals/5e/09/fb/5e09fb85e58db92b61a8e0636d151a37.jpg");
     background-size: cover; /* This will make the image cover the entire background */
     background-repeat: no-repeat;
@@ -46,58 +50,130 @@ body {
 }
 
     /* Styling */
-.box {
-    padding: 10px;
-    color: #333;
-    text-align: left;
-}
 
-@media (max-width: 1200px) {
-    .grid {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        background: #ccc;
-    }
-    
-    
-        /* Styling */
-    .box {
-        color: #333;
-        text-align: left;
-    }
-    .image {
-        padding: 5px;
-        width: 80%; /* Ensure the image takes up 100% of its container */
-        height: auto; /* Maintain the image's aspect ratio */
-    }
-}
+  .oupa{
+    width: 100%;
+  }
 
-@media (max-width: 600px) {
-    .image {
-        display: none;
+  .parent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item {
+    display: inline-block;
+
+    margin-top: 100px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+    width: 85%;
+    background: #fff;
+    
+    padding: 20px 60px 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 25px -6px;
+  }
+
+  .item2 {
+    display: inline-block;
+
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: -10px; 
+
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    width: 85%;
+    background: #fff;
+    
+    padding: 20px 60px 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 0px 25px -6px;
+  }
+
+  /* on PC */
+  @media screen and (min-width: 550px) {
+    .featured-image {
+      float: left;
+      width: 40%;
+      padding-right: 15px;
     }
-    .image2 {
-        display: none;
+    .featured-image img {
+      width: 100%;
     }
-}
+    .description {
+      font-size: 1.5vw;
+      float: left;
+      width: 60%;
+    }
+    .description h3{
+      font-size: 2.5vw;
+    }
+    .description h1{
+      font-size: 3.5vw;
+    }
+  }
+  /* on Mobile */
+  @media screen and (max-width: 700px) {
+    .featured-image {
+      width: 100%;
+    }
+    .featured-image img {
+      width: 100%;
+    }
+    .description {
+      font-size: 1.8vh;
+      width: 100%;
+    }
+  }
+@media screen and (min-width: 700px) {
+    .featured-image {
+      float: left;
+      width: 40%;
+      padding-right: 15px;
+    }
+    .featured-image img {
+      width: 100%;
+    }
+    .description {
+      font-size: 1.5vw;
+      width: 60%;
+    }
+    .description h3{
+      font-size: 2.5vw;
+    }
+    .description h1{
+      font-size: 4vw;
+    }
+  }
+  /* on Mobile */
+  @media screen and (max-width: 550px) {
+    .featured-image {
+      width: 100%;
+    }
+    .featured-image img {
+      width: 100%;
+    }
+    .description {
+      font-size: 1.8vh;
+      width: 100%;
+    }
+  }
+
 
 .image {
+    display: block;
     border-radius: 20px;
     padding: 10px;
-    width: 90%; /* Ensure the image takes up 100% of its container */
-    height: auto; /* Maintain the image's aspect ratio */
-}
-
-.image2 {
-    border-radius: 20px;
-    margin-left: 15%;
-    margin-right: auto;
-    padding: 10px;
-    width: 60%; /* Ensure the image takes up 100% of its container */
-    height: auto; /* Maintain the image's aspect ratio */
+    height: auto;
 }
 
 
